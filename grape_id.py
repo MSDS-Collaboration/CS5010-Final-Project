@@ -100,13 +100,15 @@ with open('winemag-data-130k-v2.csv', 'r') as read_obj, \
     # Read each row of the input csv file as list
     i = 0
     for row in csv_reader:
-        # Append the default text in the row / list
-        column = grapeId(row[2].lower(), row[12].lower()) if (i > 0) else 'type'
-        row[11] = removeParens(row[11])
-        row.append(column)
-        # Add the updated row / list to the output file
-        csv_writer.writerow(row)
-        i += 1
+        # Skip rows with null in important columns
+        if row[1] and row[4] and row[5] and row[9] and row[12]:
+            # Append the default text in the row / list
+            column = grapeId(row[2].lower(), row[12].lower()) if (i > 0) else 'type'
+            row[11] = removeParens(row[11])
+            row.append(column)
+            # Add the updated row / list to the output file
+            csv_writer.writerow(row)
+            i += 1
 
 # Count results
 wine_list = pd.read_csv('winemag-data-modified.csv')
