@@ -2,8 +2,6 @@ from csv import writer
 from csv import reader
 import re
 
-print('>>> Starting')
-
 # Function to split a comma or forward slash separated string to a list
 def splitNames(namesStr):
     nameLst = re.split(r",|\/", namesStr, flags=re.IGNORECASE)
