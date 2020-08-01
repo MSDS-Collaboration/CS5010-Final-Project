@@ -17,14 +17,42 @@ def partialMatchPhrase(searchTarget, searchTerms):
     return len(set(searchTerms).intersection(searchTargetTerms)) > 0
 
 # Function to find wine color based on common words for that color
-def findColors(searchTarget):
+# Certain matches are given more weight to reduce matching errors
+def findColors(searchTarget, weighDefinitive=True, weighAll=False):
     colors = []
     if partialMatchPhrase(searchTarget, ['rosé', 'rosato', 'rosado', 'rosat', 'roséwein', 'roséfine']):
         colors.append('Rosé')
-    if partialMatchPhrase(searchTarget, ['white','blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
+        if weighAll | weighDefinitive:
+            # Add weight to this match very heavily since these words are
+            # very indicative of wine type
+            colors.append('Rosé')
+            colors.append('Rosé')
+            colors.append('Rosé')
+            colors.append('Rosé')
+    if partialMatchPhrase(searchTarget, ['blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
         colors.append('White')
-    if partialMatchPhrase(searchTarget, ['red','rotwein','rosso','rouge']):
+        if weighAll | weighDefinitive:
+            colors.append('White')
+            colors.append('White')
+            colors.append('White')
+    if partialMatchPhrase(searchTarget, ['white']):
+        colors.append('White')
+        if weighAll:
+            colors.append('White')
+            colors.append('White')
+    if partialMatchPhrase(searchTarget, ['rotwein','rosso','rouge']):
         colors.append('Red')
+        if weighAll | weighDefinitive:
+            # We add extra weight to matches on varity
+            colors.append('Red')
+            colors.append('Red')
+            colors.append('Red')
+    if partialMatchPhrase(searchTarget, ['red']):
+        colors.append('Red')
+        if weighAll:
+            # We add extra weight to matches on varity
+            colors.append('Red')
+            colors.append('Red')
     return colors
 
 # Function to find if the wine is sparkling based on common words for sparkling
@@ -58,7 +86,7 @@ def chooseMostCommon(searchList, breakTies = False):
 # Algorithm to guess wine type (Red, White, Rose, Sparkling, or Blend)
 # We build a list of color matches based on several criteria
 # Then we take the most frequent color in that list
-def determineWineType(variety, designation, description):
+def determineWineType(variety, designation, title, description):
     # Check if a sparkling wine
     prefix = findPrefix(variety)
     if not prefix:
@@ -70,38 +98,35 @@ def determineWineType(variety, designation, description):
         suffix = findSuffix(designation)
 
     # First take color from wine variety name
-    colors = findColors(variety)
+    colors = findColors(variety, weighAll=True, weighDefinitive=True)
     (color, colors) = chooseMostCommon(colors)
 
-    if color is None and ('-' in variety):
+    # Next try to match wine variety to grape list from Wikipedia
+    full_matches = grape_list[grape_list['Name'].apply(lambda x: x == variety)]['Type'].tolist()
+
+    # Handle hyphenated blends
+    if len(full_matches) == 0 and ('-' in variety):
         for varietyPart in variety.split('-'):
-            colors += findColors(variety)
+            full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
 
-        (color, colors) = chooseMostCommon(colors)
+    # Handle multi-word
+    if len(full_matches) == 0 and (' ' in variety):
+        for varietyPart in variety.split(' '):
+            full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
 
-    if color is None:
-         # Next try to match wine variety to grape list from Wikipedia
-        full_matches = grape_list[grape_list['Name'].apply(lambda x: x == variety)]['Type'].tolist()
+    # Check for full grape matches
+    if len(full_matches):
+        colors += full_matches
 
-        # Handle hyphenated blends
-        if len(full_matches) == 0 and ('-' in variety):
-            for varietyPart in variety.split('-'):
-                full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
+    # Next take color from wine designation
+    colors += findColors(designation, weighDefinitive=True)
 
-        if len(full_matches) == 0 and (' ' in variety):
-            for varietyPart in variety.split(' '):
-                full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
+    # Next take color from wine title
+    colors += findColors(title, weighDefinitive=True)
 
-        # Check for full grape matches
-        if len(full_matches):
-            colors += full_matches
-            # If we find a single color based on full matches, go with that
-
-        (color, colors) = chooseMostCommon(colors)
+    (color, colors) = chooseMostCommon(colors)
 
     if color is None:
-        # Next take color from wine designation
-        colors += findColors(designation)
 
         # Check for partial grape matchese
         partial_matches = grape_list[grape_list['Name'].apply(lambda x: partialMatchPhrase(x, [variety]))]
@@ -119,6 +144,7 @@ def determineWineType(variety, designation, description):
     # but known usually white
     if color is None and variety in ['chardonnay', 'riesling', 'pinot gris', 'muskat', \
         'muscadine', 'malvasia fina', 'malvasia', 'gros plant', 'cercial', 'cerceal']:
+        colors.append('White')
         colors.append('White')
         (color, colors) = chooseMostCommon(colors)
 
@@ -156,7 +182,7 @@ def addTypeColumnToData():
             if row[1] and row[4] and row[5] and row[9] and row[12]:
                 # Append wineType, or if first row, append column header
                 if (i > 0):
-                    wineType = determineWineType(row[12].lower(), row[3].lower(), row[2].lower())
+                    wineType = determineWineType(row[12].lower(), row[3].lower(), row[11].lower(), row[2].lower())
                 else:
                     wineType = 'type'
                 row[11] = removeComments(row[11])
@@ -172,4 +198,4 @@ def addTypeColumnToData():
     print('>>> Finished')
 
 # Uncomment this to run the function to add type column
-addTypeColumnToData()
+# addTypeColumnToData()
