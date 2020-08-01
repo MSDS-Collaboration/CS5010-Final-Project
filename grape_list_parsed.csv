@@ -3632,7 +3632,8 @@ moreto,Red
 moristel,Red
 concejón,Red
 juán ibáñez,Red
-miguel de arcos and miguel del arco,Red
+miguel de arcos,Red
+miguel del arco,Red
 mornen noir,Red
 morrastel bouschet,Red
 mourisco tinto,Red
@@ -3891,7 +3892,8 @@ bonicaire,Red
 embolicaire,Red
 parrel,Red
 trapat,Red
-traput and trepan,Red
+traput,Red
+trepan,Red
 trevisana nera,Red
 trincadeira,Red
 castelão,Red
@@ -3954,7 +3956,7 @@ asproaidani,White
 leyko,White
 lefko,White
 lafko aidani,White
-and lefko ithani,White
+lefko ithani,White
 airén,White
 aiden,White
 blancon,White
@@ -3972,7 +3974,7 @@ manchega,White
 mantuo laeren,White
 valdepenas,White
 valdepenera blanca,White
-and valdepenero,White
+valdepenero,White
 alarije,White
 alarijen,White
 albalonga,White
@@ -4007,7 +4009,7 @@ forcelluta,White
 raccia pollone,White
 ribona,White
 riminese,White
-and sforcella,White
+sforcella,White
 albanella,White
 albanello bianco,White
 alablanca,White
@@ -4016,7 +4018,8 @@ albanello bianco di siracusa,White
 alvanella,White
 alvanello,White
 arnina bianca,White
-arvina and claretta,White
+arvina,White
+claretta,White
 albaranzeuli bianco,White
 albaranzèllu,White
 alvarenzeli,White
@@ -4029,7 +4032,8 @@ lacconazzu biancu,White
 laconari bianca,White
 laconarzu,White
 laconazzu bianco,White
-liconargiu and licronasciu,White
+liconargiu,White
+licronasciu,White
 albarello,White
 albariño,White
 alvarinho,White
@@ -4039,7 +4043,8 @@ alvarin blanco,White
 alvarinha,White
 alvarinho,White
 azal blanco,White
-galego and galeguinho,White
+galego,White
+galeguinho,White
 albarola,White
 albarola bianca,White
 albarola di lavagna,White
@@ -4049,7 +4054,8 @@ calcatella,White
 calcatella di sarzana,White
 erbarola,White
 temosci,White
-trebbiano di sarzana and trebbiano locale,White
+trebbiano di sarzana,White
+trebbiano locale,White
 albillo,White
 albilla,White
 albillo de cebreros,White
@@ -4105,9 +4111,11 @@ prolifera,White
 temprano de campo real,White
 temprano de mora,White
 uva de lena,White
-uva pardilla and verdaguilla,White
+uva pardilla,White
+verdaguilla,White
 alcañón,White
-blanco castellano and bobal blanca,White
+blanco castellano,White
+bobal blanca,White
 aligoté,White
 aligotay,White
 alligotay,White
@@ -4143,7 +4151,8 @@ allionza,White
 allionza bianca,White
 glionza,White
 leonza,White
-uva lonza and uva schiava,White
+uva lonza,White
+uva schiava,White
 altesse,White
 roussette,White
 altesse blanche,White
@@ -4166,7 +4175,8 @@ roussette haute,White
 roussette petite,White
 serene blanche,White
 amigne,White
-amigne blanche and amique,White
+amigne blanche,White
+amique,White
 ansonica,White
 inzolia,White
 amsonica,White
@@ -4195,7 +4205,7 @@ nzolia bianca,White
 nzolia di lipari,White
 nzolia di palermo,White
 soria,White
-and zolia bianca,White
+zolia bianca,White
 antao vaz,White
 arany sárfehér,White
 izsáki,White
@@ -4207,24 +4217,31 @@ arbane,White
 albane,White
 arbane blanc,White
 arbane du bachet,White
-arbanne,White
+arbanne (in les riceys,White
+moulins-en-tonnerrois),White
 arbanne blanche,White
 arbenne,White
 arbenne blanc,White
 arbone,White
 crène (in balnot-sur-laignes,White
-balnot-la-grange and polisot),White
+balnot-la-grange,White
+polisot),White
 crene,White
-crénillat,White
-crenillat and darbanne,White
+crénillat (la valla-en-gier,White
+rive-de-gier in loire),White
+crenillat,White
+darbanne,White
 arbois,White
-menu pineau and petit pineau,White
+menu pineau,White
+petit pineau,White
 herbois,White
-orbois and verdet,White
+orbois,White
+verdet,White
 arilla,White
 agrilla,White
 arillo,White
-rille and uva rilla,White
+rille,White
+uva rilla,White
 arinto,White
 assario branco,White
 arintho,White
@@ -4245,7 +4262,7 @@ chapeludo,White
 malvasia fina,White
 pe de perdiz branco,White
 pederna,White
-and pedernao,White
+pedernao,White
 arneis,White
 bianchetta,White
 bianchetta d'alba,White
@@ -4254,7 +4271,7 @@ bianchetto,White
 bianchetto albese,White
 bianchetto di alba,White
 bianchetto di verzuolo,White
-and nebbiolo bianco,White
+nebbiolo bianco,White
 arnsburger,White
 arrufiac,White
 arrufiat,White
@@ -4271,7 +4288,7 @@ refiat,White
 rouffiac femelle,White
 ruffiac,White
 ruffiac blanc,White
-and rufiat,White
+rufiat,White
 arvesiniadu,White
 alvu signadu,White
 argu ingianau,White
@@ -4280,7 +4297,8 @@ arvesimiadu bianco,White
 arvu siniadu,White
 arvusiniadu,White
 arvusiniagu,White
-avrisiniadu and uva oschirese,White
+avrisiniadu,White
+uva oschirese,White
 asprinio bianco,White
 asprinia di aversa,White
 asprinio,White
@@ -4290,20 +4308,21 @@ lacrima,White
 olivese,White
 ragusano,White
 ragusano bianco,White
-uva asprina and uva asprinia,White
+uva asprina,White
+uva asprinia,White
 assyrtiko,White
 assyrtico,White
 arcytico,White
 assirtico,White
 assyrtico,White
 asurtico,White
-and asyrtiko,White
+asyrtiko,White
 athiri,White
 asprathiri,White
 asprathiro,White
 athiri aspro,White
 athiri lefko,White
-and athiri leyko,White
+athiri leyko,White
 aubin,White
 aubin blanc,White
 albin blanc,White
@@ -4314,7 +4333,8 @@ gros vert de crenay,White
 aubin vert,White
 aubun vert,White
 blanc d'euvezin,White
-blanc d'euvizin and vert blanc,White
+blanc d'euvizin,White
+vert blanc,White
 aurelius,White
 auxerrois blanc,White
 arboisier,White
@@ -4380,12 +4400,13 @@ sardone,White
 shardone,White
 weiss silber,White
 weissedler,White
-auxerrois blanc de laquenexy and auxerrois de laquenexy,White
+auxerrois blanc de laquenexy,White
+auxerrois de laquenexy,White
 avesso,White
 bornal,White
 bornao,White
 borracal branco,White
-and borral,White
+borral,White
 azal branco,White
 asal branco,White
 asal da lixa,White
@@ -4395,20 +4416,21 @@ carvalha,White
 carvalhal,White
 es pinheira,White
 gadelhudo,White
-and pinheira,White
+pinheira,White
 barcelo,White
 bacchus,White
 bacchus weiss,White
 weisser bacchus,White
 frühe scheurebe,White
-geilweilerhof 33-29-133 and gf 33-29-133,White
+geilweilerhof 33-29-133,White
+gf 33-29-133,White
 baco blanc,White
 22 a baco,White
 baco 22 a,White
 baco 22-a,White
 baco 221,White
 maurice baco,White
-and piquepoul de pays,White
+piquepoul de pays,White
 baiyu,White
 rkatsiteli,White
 balzac blanc,White
@@ -4419,11 +4441,13 @@ chigne,White
 dressiere,White
 limousin blanc,White
 margnac blanc,White
-plant de saint jean and ressière,White
+plant de saint jean,White
+ressière,White
 banat riesling,White
 banat rizling,White
 baratuciat,White
-bertauciat and bertacucià,White
+bertauciat,White
+bertacucià,White
 barbera bianca,White
 bertolino,White
 bertoulin,White
@@ -4439,7 +4463,8 @@ peigin,White
 peisìn,White
 peisin,White
 poison bianco,White
-poisino and uva ovata,White
+poisino,White
+uva ovata,White
 bariadorgia,White
 bariadorgia bianca,White
 barria dorgia,White
@@ -4452,7 +4477,8 @@ carcajolo blanc,White
 cargajola blanc,White
 fragrante,White
 gregu bianco,White
-variatoghja and verzolina bianca,White
+variatoghja,White
+verzolina bianca,White
 baroque,White
 barake,White
 baroca,White
@@ -4468,7 +4494,8 @@ claverie blanc,White
 escripet folle,White
 muscadelle de nates,White
 petit bordelais,White
-plant bordelais and sable blanc,White
+plant bordelais,White
+sable blanc,White
 belina,White
 benedino,White
 besgano bianco,White
@@ -4484,20 +4511,24 @@ grignolino bianco,White
 grignolo,White
 grignolo bianco,White
 grignolo bianco di san colombano,White
-san colombano piccolo and uva di milano,White
+san colombano piccolo,White
+uva di milano,White
 bia blanc,White
 bear,White
-beard and biard,White
+beard,White
+biard,White
 bianca,White
 biahka,White
 bianka,White
 ec 40,White
 ecs 40,White
-egri csillagok 40 and may rot,White
+egri csillagok 40,White
+may rot,White
 biancame,White
 bianchello,White
 malvasia di sardegna,White
-trebbiano toscano and albana,White
+trebbiano toscano,White
+albana,White
 bianchetta trevigiana,White
 bianca gentile di fonzaso,White
 bianchetta,White
@@ -4517,7 +4548,8 @@ vernassina,White
 vernazza,White
 vernazza trentina,White
 vernazzina,White
-weisser vernatch and weissvernatsch,White
+weisser vernatch,White
+weissvernatsch,White
 bianchetti genovese,White
 bianco d'alessano,White
 acchiappapalmento,White
@@ -4529,7 +4561,8 @@ bianco di palmento,White
 bianco di valdigna,White
 butta palmento,White
 iuvarello,White
-verdurino and vuiono,White
+verdurino,White
+vuiono,White
 biancolella,White
 bianca,White
 bianca tera,White
@@ -4544,7 +4577,8 @@ ianculillo,White
 jancolella,White
 janculella,White
 janculillo,White
-petite blance and petite blanche,White
+petite blance,White
+petite blanche,White
 biancu gentile,White
 biancone di portoferraio,White
 biancona,White
@@ -4553,7 +4587,8 @@ biancone blanc,White
 corcesco,White
 folle verte d'oleron,White
 pagadebiti di porto s stefano,White
-pagadebiti di porto san stefano and uva bianca,White
+pagadebiti di porto san stefano,White
+uva bianca,White
 bical,White
 borrado das moscas,White
 arinto de alcobaça,White
@@ -4561,16 +4596,18 @@ barrado das moscas,White
 bical de bairrada,White
 borrado das moscas,White
 pintado das moscas,White
-and pintado dos pardais,White
+pintado dos pardais,White
 bigolona,White
 bigolara,White
 bigolona bianca,White
 bigolona veronese,White
-sampagna and smarzirola,White
+sampagna,White
+smarzirola,White
 blatterle,White
 bianchetto de verzuolo,White
 blaterle,White
-blatterl and platterle,White
+blatterl,White
+platterle,White
 bratislavské biele,White
 boais,White
 bogdanuša,White
@@ -4583,7 +4620,7 @@ bojadanuša,White
 bojdanuša,White
 mladeinka,White
 vrbanjka,White
-and vrbanjska,White
+vrbanjska,White
 bombino bianco,White
 abondante,White
 bambino,White
@@ -4648,11 +4685,12 @@ uva castellana,White
 uva da un osso,White
 uva fermana,White
 uva romana,White
-and zapponara bianca,White
+zapponara bianca,White
 borba blanca,White
 bosco,White
 bosco bianco,White
-bosco bianco del genovesato and madea,White
+bosco bianco del genovesato,White
+madea,White
 bourboulenc,White
 berlou blanc,White
 blanquette,White
@@ -4725,11 +4763,11 @@ ragdonska ranina bela,White
 ranina,White
 ranina bela,White
 ranka,White
-and sasla buvije,White
+sasla buvije,White
 breidecker,White
 cd 4984,White
 geisenheim 4984,White
-and gm 49-84,White
+gm 49-84,White
 brustiano bianco,White
 bruschiami,White
 bruschianu,White
@@ -4739,7 +4777,8 @@ brustiano,White
 brustianu,White
 calitrano,White
 calitranu,White
-colitrano  and licronaxu bianco,White
+colitrano,White
+licronaxu bianco,White
 bual,White
 boal,White
 budai zöld,White
@@ -4770,15 +4809,17 @@ grand blanc,White
 gros montils,White
 meslier d'orleans,White
 monbadon,White
-and ugni de montpellier,White
+ugni de montpellier,White
 caíño blanco,White
 alvarinhão,White
 cainho,White
 cainho branco,White
 cainho de moreira,White
 caino blanco,White
-caíño branco,White
-caino branco and caino de moreira,White
+caíño branco (in galicia,White
+portugal),White
+caino branco,White
+caino de moreira,White
 camaralet,White
 camaralet blanc,White
 camaralet à fleurs femelles,White
@@ -4786,18 +4827,22 @@ camaralet de lasseube,White
 camarau,White
 camaraou blanc,White
 gentil aromatique,White
-moustardet and petit camarau,White
+moustardet,White
+petit camarau,White
 canari blanc,White
 bellecital,White
-caillaba and cailleba,White
+caillaba,White
+cailleba,White
 caprettone,White
 carica l'asino,White
 carignan blanc,White
-feher carignan and karinjan,White
+feher carignan,White
+karinjan,White
 cascarolo bianco,White
 cascarala,White
 cascarecul,White
-cascarelbo and cascarolo,White
+cascarelbo,White
+cascarolo,White
 catarratto,White
 castellaro,White
 cataratto bertolaro,White
@@ -4813,7 +4858,7 @@ catarratto bertolaro,White
 catarratto bianco latino,White
 catarratto bianco nostrale catarratto carteddaro,White
 cattaratto commune,White
-and catarrato lucido,White
+catarrato lucido,White
 cayetana,White
 calagraño,White
 jaén blanca,White
@@ -4882,13 +4927,13 @@ robal,White
 tierra de barros,White
 verdeja,White
 virules,White
-and xarello,White
+xarello,White
 cereza,White
 ceresa,White
 ceresina,White
 cereza italiana,White
 cerise,White
-and chereza,White
+chereza,White
 chardonnay,White
 arboisier,White
 arnaison blanc,White
@@ -5203,7 +5248,7 @@ zlahtina,White
 zlahtnina,White
 zlahtnina bijela,White
 zlatina,White
-and zupljanka,White
+zupljanka,White
 chenel,White
 chenin blanc,White
 pineau de la loire,White
@@ -5225,7 +5270,8 @@ france),White
 franche,White
 gamet blanc (aveyron,White
 france),White
-gros chenin,White
+gros chenin (in maine-et-loire,White
+indre-et-loire),White
 gros pineau,White
 gros pinot blanc de la loire,White
 gout fort,White
@@ -5246,13 +5292,15 @@ quefort,White
 rajoulin,White
 ronchalin,White
 rouchelein,White
-rouchelin,White
+rouchelin (in gironde,White
+périgord),White
 rouchalin,White
 rougelin,White
 steen,White
 stein,White
 tête de crabe,White
-vaalblaar stein and verdurant,White
+vaalblaar stein,White
+verdurant,White
 clairette,White
 ag cleret,White
 ag kleret,White
@@ -5299,7 +5347,8 @@ seidentraube,White
 shalos zolotistyi,White
 uva gijona,White
 vivsianka,White
-vivsyanca and vivsyanka,White
+vivsyanca,White
+vivsyanka,White
 claret de gers,White
 claret de gascogne,White
 claverie,White
@@ -5309,10 +5358,12 @@ chaloussenc,White
 clabarien,White
 clabérieu,White
 clabéria,White
-claverie blanc and claverie vert,White
+claverie blanc,White
+claverie vert,White
 cococciola,White
 cacciola,White
-cacciuolo and cociumella,White
+cacciuolo,White
+cociumella,White
 cocur,White
 coda di pecora,White
 coda di volpe,White
@@ -5331,7 +5382,8 @@ falerno,White
 guarnaccia bianca,White
 lisica opasca bjelaja,White
 lisitcha opachka biala,White
-pallagrello and pallegrello bianco,White
+pallagrello,White
+pallegrello bianco,White
 colombard,White
 bardero,White
 blanc emery,White
@@ -5359,7 +5411,7 @@ quene tendre,White
 quene vert,White
 queue tendre,White
 queue verte,White
-and west's white prolific,White
+west's white prolific,White
 completer,White
 lafnaetscha,White
 lafnetscha,White
@@ -5372,7 +5424,7 @@ räuschling edelweiss,White
 zürichersee,White
 zürichseer,White
 zürirebe,White
-and zürichersee,White
+zürichersee,White
 cortese,White
 bianca fernanda,White
 corteis,White
@@ -5384,7 +5436,7 @@ courteis,White
 cortesi,White
 courteisa,White
 fernanda bianca,White
-and raverusto,White
+raverusto,White
 crato,White
 crato bianco,White
 courbu,White
@@ -5402,14 +5454,15 @@ courbu gros,White
 courbut,White
 courbut blanc,White
 courtoisie,White
-ondaria zuria and vieux pacherenc,White
+ondaria zuria,White
+vieux pacherenc,White
 criolla grande,White
 criolla grande sanjuanina,White
 criolla san juanino,White
 criolla sanjuanina,White
 italia,White
 sanjuanina rosada,White
-and uva tierna,White
+uva tierna,White
 crouchen,White
 clare riesling,White
 cape riesling,White
@@ -5435,7 +5488,7 @@ s a riesling,White
 sable blanc,White
 sales blanc,White
 trouchet blanc,White
-and zurizerratia,White
+zurizerratia,White
 pearl of csaba,White
 csaba gyöngye,White
 csabagyöngye,White
@@ -5453,7 +5506,7 @@ dattier,White
 debina,White
 dempina,White
 ntempina,White
-and zitsa,White
+zitsa,White
 debit,White
 diagalves,White
 dimiat,White
@@ -5528,7 +5581,8 @@ zmedervka,White
 zoumiatico,White
 zoumiatis,White
 zumjat,White
-zumjatiko and zumyat,White
+zumjatiko,White
+zumyat,White
 dinka,White
 bakar,White
 chtein chiler,White
@@ -5575,7 +5629,7 @@ steinschiller roz,White
 vörös dinka,White
 vorosz dinka,White
 werschätzer,White
-and werschatzer,White
+werschatzer,White
 doña blanca,White
 alvaro de soire,White
 alvaro de sousa,White
@@ -5592,11 +5646,13 @@ malvasia grosso,White
 moza fresca,White
 santo estevao,White
 valenciana,White
-voal cachudo and voal esparrapado,White
+voal cachudo,White
+voal esparrapado,White
 donzelinho branco,White
 donzellinho branco,White
 donzelyhno,White
-terrantes and terrantez,White
+terrantes,White
+terrantez,White
 doradilla,White
 doradillo,White
 drupeggio,White
@@ -5609,7 +5665,8 @@ canina,White
 drupeccio,White
 lupeccio,White
 trupeccio,White
-uva dei cani  and volpicchio,White
+uva dei cani,White
+volpicchio,White
 durella,White
 cagnina,White
 duracino,White
@@ -5620,7 +5677,7 @@ durola bianca,White
 rabbiosa,White
 rabiosa,White
 rabiosa di asolo,White
-and raboso piava,White
+raboso piava,White
 ehrenfelser,White
 elbling,White
 albana,White
@@ -5735,7 +5792,7 @@ welschel,White
 emerald riesling,White
 california 1139 e 29,White
 emerald rizling,White
-and riesling izumrudnii,White
+riesling izumrudnii,White
 emir karasi,White
 encruzado,White
 salgueirinho,White
@@ -5760,7 +5817,7 @@ trebbiano perugino,White
 trebbiano verde dell'umbria,White
 uva rustia,White
 uva rustica,White
-and vernazza di gattinara,White
+vernazza di gattinara,White
 esquitxagos,White
 escanyavella,White
 ezerjó,White
@@ -5800,7 +5857,7 @@ tausendfachgute,White
 tausendgerte,White
 tausendgut,White
 tausendgute,White
-and trummertraube,White
+trummertraube,White
 faber,White
 faberrebe,White
 falanghina,White
@@ -5818,7 +5875,7 @@ fallanghina,White
 folanghina,White
 montecalvo,White
 montellese,White
-and uva falerna,White
+uva falerna,White
 false pedro,White
 pedro luis,White
 cañocazo,White
@@ -5835,7 +5892,7 @@ fernão pires do beco,White
 gaeiro,White
 gaieiro,White
 maria gomes,White
-and molinha,White
+molinha,White
 ferral,White
 fetească albă,White
 fetiaska,White
@@ -5924,7 +5981,7 @@ latino,White
 latino bianco,White
 minutola,White
 minutolo,White
-and santa sofia,White
+santa sofia,White
 fié,White
 fiét,White
 fié gris,White
@@ -5942,7 +5999,8 @@ came braque,White
 camobraque,White
 canut,White
 canut du lot et garonne,White
-chalosse blanche,White
+chalosse blanche (in the gers,White
+landes region),White
 chalot,White
 dame blanc,White
 dame blanche,White
@@ -5963,7 +6021,8 @@ fütterer,White
 grais,White
 grais bouillon,White
 gros meslier,White
-gros plant,White
+gros plant (in the pay nantais,White
+vendée),White
 grosse blanquette,White
 grosse chalosse,White
 matza zuri,White
@@ -5994,7 +6053,7 @@ rochelle verte,White
 roumain,White
 taloche du lot,White
 talosse,White
-and ugne blanche,White
+ugne blanche,White
 forastera,White
 ferestiera,White
 forastera blanca,White
@@ -6004,13 +6063,15 @@ forestiera,White
 forestiero,White
 frastera,White
 furastera,White
-furastiera and uva dell'isola,White
+furastiera,White
+uva dell'isola,White
 forastera,White
 francavida,White
 francusa,White
 freisamer,White
 freiburger,White
-freiburg 25-1 or fr 25-1 and the synonym freiburger,White
+freiburg 25-1 or fr 25-1,White
+the synonym freiburger,White
 fromenteau,White
 furmint,White
 mosler,White
@@ -6099,7 +6160,8 @@ shipo,White
 shipon,White
 shiponski,White
 sipelj,White
-šipon,White
+šipon (in slovenia,White
+northern croatia),White
 som,White
 som shipo,White
 somszölö,White
@@ -6124,7 +6186,8 @@ weisslabler,White
 weisslauber,White
 zapfete,White
 zapfner,White
-zopfner  and zilavka,White
+zopfner,White
+zilavka,White
 galego dourado,White
 garganega,White
 grecanico,White
@@ -6152,7 +6215,7 @@ ora,White
 oro,White
 ostesa,White
 ostesona,White
-and recanicu,White
+recanicu,White
 garnacha blanca,White
 grenache blanc,White
 belan,White
@@ -6162,7 +6225,8 @@ garnatxa blanca,White
 vernatxa blanca  in tierras del ebro,White
 rool grenache,White
 silla blanc,White
-sillina blanc and white grenache,White
+sillina blanc,White
+white grenache,White
 gewürztraminer,White
 tramini,White
 traminac,White
@@ -6268,12 +6332,14 @@ traminer rosa,White
 traminer rose aromatique,White
 traminer rot,White
 traminer rozovyi,White
-tramini piros and trammener,White
+tramini piros,White
+trammener,White
 girgentina,White
 ghirghentina,White
 insolja tal-girgenti,White
 giró blanc,White
-giró blanco and giró roz,White
+giró blanco,White
+giró roz,White
 gloria,White
 godello,White
 agodello,White
@@ -6288,13 +6354,16 @@ berdello,White
 godelho,White
 godella,White
 godenho,White
-ojo de gallo and trincadente,White
+ojo de gallo,White
+trincadente,White
 goldburger,White
-klosterneuburg 16-8 and orangeriesling,White
+klosterneuburg 16-8,White
+orangeriesling,White
 goldriesling,White
 goldmuskat,White
 riesling doré,White
-riesling khativ and risling zolotistyi,White
+riesling khativ,White
+risling zolotistyi,White
 gouais blanc,White
 absenger,White
 bauernweinbeer,White
@@ -6472,7 +6541,8 @@ président,White
 ramassaou blanc,White
 ramassou blanc,White
 taloche,White
-tizourine bou-aferara blanc and tizourine bou-afrara,White
+tizourine bou-aferara blanc,White
+tizourine bou-afrara,White
 grasă de cotnari,White
 kövérszőlő,White
 resertraube,White
@@ -6501,7 +6571,7 @@ pulcinella,White
 stroppa volpe,White
 strozza volpe,White
 strozzavolpe,White
-and uva di san marino,White
+uva di san marino,White
 greco bianco,White
 balsamina bianca,White
 biancame,White
@@ -6523,7 +6593,7 @@ montecchiese,White
 morbidella,White
 ragusano bianco,White
 sambiase,White
-and verdicchio near,White
+verdicchio near,White
 green hungarian,White
 aramon du nord,White
 bela pelesovna,White
@@ -6556,7 +6626,7 @@ tokayer,White
 treitsche,White
 ungar,White
 weisser tokayer,White
-and zuti krhkopetec,White
+zuti krhkopetec,White
 grenache gris,White
 abundante,White
 aleante,White
@@ -6615,7 +6685,7 @@ tinto navalcarnero,White
 tai rosso,White
 toledana,White
 uva di spagna,White
-and vernatxa,White
+vernatxa,White
 grignolino,White
 arlandino,White
 balestra,White
@@ -6640,7 +6710,7 @@ rosetta,White
 rossello,White
 rossetto,White
 rossetto cites,White
-and verbesino,White
+verbesino,White
 grillo,White
 riddu,White
 rossese bianco,White
@@ -6656,7 +6726,7 @@ korčulanski,White
 grolleau gris,White
 grolleau,White
 groslot de la thibaudière,White
-and groslot gris,White
+groslot gris,White
 gros manseng,White
 izkiriota handi,White
 gros mansenc blanc,White
@@ -6742,7 +6812,8 @@ zöld muskotally,White
 zöld muskotalynak,White
 zöld veltelini,White
 zöld velteliny,White
-zöldveltelini and zold veltelini,White
+zöldveltelini,White
+zold veltelini,White
 guardavalle,White
 gutenborner,White
 geisenheim 17-52,White
@@ -6787,7 +6858,7 @@ nöthab,White
 tarpai,White
 tokai,White
 tokay,White
-and vörös,White
+vörös,White
 hondarrabi zuri,White
 humagne blanche,White
 huxelrebe,White
@@ -6816,7 +6887,7 @@ zolotisti ranij,White
 zolotistyi rannii,White
 zolotistyi ranniy,White
 zolotistyj rannij,White
-and zolotisztuej rannij,White
+zolotisztuej rannij,White
 italia,White
 jacquère,White
 altesse de saint-chef,White
@@ -6878,7 +6949,7 @@ tarpai,White
 török búza szőlő,White
 tokayer langer weisser,White
 vékonyhéjú,White
-and vinase,White
+vinase,White
 juwel,White
 kanzler,White
 keknyelu,White
@@ -6954,16 +7025,18 @@ krstac bijeli,White
 krstaca bijela,White
 krstach bianco,White
 loza bijela,White
-and vinogradarska bijela,White
+vinogradarska bijela,White
 kujundžuša,White
 ladikino,White
 lado,White
 lagarino bianco,White
-chegarèl and sghittarella,White
+chegarèl,White
+sghittarella,White
 lagorthi,White
 lauzet,White
 laouset,White
-lauzet blanc and lercat blanc,White
+lauzet blanc,White
+lercat blanc,White
 len de l'el,White
 len de l'elh,White
 loin-de-l'oeil,White
@@ -6994,7 +7067,7 @@ loureiro,White
 loureiro blanco,White
 marques,White
 marquez,White
-and rutherglen pedro,White
+rutherglen pedro,White
 luglienga,White
 agliana,White
 agosenga di aosta,White
@@ -7098,7 +7171,8 @@ rumamellas,White
 saint john‘s,White
 san jacopo,White
 santa anna di lipsia,White
-seidentraube,White
+seidentraube (in germany,White
+switzerland),White
 seidentraube gelb,White
 selkovaia kist,White
 shelkovaya kist,White
@@ -7108,7 +7182,8 @@ uva pastora,White
 uva di sant'anna,White
 vert précoce de madère,White
 vigriega,White
-waelsch gelb and weisser kilianer,White
+waelsch gelb,White
+weisser kilianer,White
 lumassina,White
 mataòssu,White
 macabeo,White
@@ -7157,7 +7232,8 @@ ribona,White
 uva stretta,White
 verdicchio marina,White
 verdicchio marino,White
-verdicchio sirolese and verdicchio tiroles,White
+verdicchio sirolese,White
+verdicchio tiroles,White
 madeleine angevine,White
 azhupskaja mladenka,White
 chasselas de talhouet,White
@@ -7175,7 +7251,7 @@ magdalenka skora,White
 magdalina anzhuiskaya,White
 margitszoeloe,White
 petrovskii,White
-and republician,White
+republician,White
 majarcă albă,White
 malagousia,White
 malagoussia,White
@@ -7184,7 +7260,7 @@ malagoyzia,White
 malaouzia,White
 malaoyzia,White
 melaouzia,White
-and melaoyzia,White
+melaoyzia,White
 malvar,White
 lairén,White
 malvasia,White
@@ -7195,7 +7271,8 @@ mantonica vera,White
 mantonico maclugnese,White
 mantonico vero,White
 mantonicu pizzutella,White
-mantonicu vera and mantonacu viru della locride,White
+mantonicu vera,White
+mantonacu viru della locride,White
 manteudo,White
 maria gomes,White
 fernão pires,White
@@ -7208,7 +7285,7 @@ fernão pires do beco,White
 gaeiro,White
 gaieiro,White
 maria gomes,White
-and molinha,White
+molinha,White
 marsanne,White
 avilleran,White
 avilleron,White
@@ -7227,12 +7304,13 @@ rousseau,White
 roussette de saint peray,White
 roussette grosse,White
 white hermitage,White
-and zrmitazh,White
+zrmitazh,White
 marzemina bianca,White
 berzemina di breganze,White
 champagna,White
 champagne,White
-sampagne and sciampagna,White
+sampagne,White
+sciampagna,White
 mauzac,White
 aiguillon,White
 becquin,White
@@ -7268,7 +7346,7 @@ plant de gaillac,White
 primard,White
 queue fort,White
 queue roide,White
-and sudunais,White
+sudunais,White
 melon de bourgogne,White
 muscadet,White
 auxerrois gros,White
@@ -7306,10 +7384,11 @@ picarneau,White
 plant de lons-le-saulnie,White
 roussette basse,White
 später weisser burgunder,White
-and weisser burgunder,White
+weisser burgunder,White
 merlot blanc,White
 merlau blanc,White
-merlaut blanc and merlot bianco,White
+merlaut blanc,White
+merlot bianco,White
 merseguera,White
 verdil,White
 verdosilla,White
@@ -7342,7 +7421,7 @@ planta de gos,White
 trova,White
 uva planta,White
 verdosilla,White
-and verema blanca,White
+verema blanca,White
 meslier st-françois,White
 anereau,White
 annereau,White
@@ -7366,7 +7445,8 @@ meslier jaune,White
 meslier vert,White
 pelgarie,White
 pot de vin,White
-purgarie and rochelin,White
+purgarie,White
+rochelin,White
 mezesfehér,White
 minella bianca,White
 eppula,White
@@ -7374,10 +7454,12 @@ minedda bianca,White
 minnedda bainca,White
 minnedda bianca,White
 minnedda bianca de catane,White
-minnedda ianca and minella,White
+minnedda ianca,White
+minella,White
 miousap,White
 molette,White
-molette blanche and molette de seyssel,White
+molette blanche,White
+molette de seyssel,White
 moll,White
 montonico bianco,White
 bottato,White
@@ -7398,14 +7480,16 @@ uva d'oro di poggio delle rose,White
 uva di poggio delle rose,White
 uva fermana,White
 uva racciapoluta,White
-uva roccipolluta and uva regno,White
+uva roccipolluta,White
+uva regno,White
 montu,White
 bianchetto,White
 bianchiana,White
 bianchino,White
 montoncello,White
 montonego bianco,White
-montuni and montuno,White
+montuni,White
+montuno,White
 morio-muskat,White
 moscatel rosada,White
 moscato giallo,White
@@ -7423,7 +7507,8 @@ muscat italien,White
 muscat vert,White
 muscatedda,White
 muscato de goloio,White
-muskat dzhiallo and muskat zuti,White
+muskat dzhiallo,White
+muskat zuti,White
 moschofilero,White
 moscophilero,White
 fileri tripoleos,White
@@ -7455,7 +7540,7 @@ mtsvane kakhetinskii,White
 mtzvane kachuri,White
 mtzvane kakhetinsky,White
 mzibani,White
-and sapena,White
+sapena,White
 müller-thurgau,White
 rivaner,White
 miler turgau,White
@@ -7521,7 +7606,7 @@ sauvignon muscadelle,White
 sauvignon vert,White
 tokay,White
 vesparo,White
-and white angelica,White
+white angelica,White
 muscat,White
 moscato,White
 misket,White
@@ -7699,14 +7784,15 @@ zihibbo di pantelleria,White
 zihibbo di termini,White
 zihibbo di trapani,White
 zihibbo hianco moscato,White
-and zihibbu di sicilia,White
+zihibbu di sicilia,White
 muscat blanc à petits grains,White
 muscat frontignan,White
 muskateller,White
 moscatel branco,White
 frontignan,White
 frontignan,White
-and in macedonia and serbia is known as temjanika,White
+in macedonia,White
+serbia is known as temjanika,White
 muscat ottonel,White
 chasselas saint fiacre,White
 mirisavka,White
@@ -7726,7 +7812,8 @@ muskat otonel,White
 muskat otonel bijeli,White
 muskat otonel weisser,White
 muskat ottonel (in austria,White
-germany and slovenia),White
+germany,White
+slovenia),White
 muskotally,White
 muskotály,White
 ottonel,White
@@ -7734,7 +7821,8 @@ ottonel frontignan,White
 ottonel muscotally,White
 ottonel muskotály,White
 tǎmîioasǎ ottonel,White
-muscat de craciunel tirnave and tamiioasa ottonel,White
+muscat de craciunel tirnave,White
+tamiioasa ottonel,White
 nasco,White
 basco bianco,White
 nasco bianco,White
@@ -7742,7 +7830,8 @@ nasco di sardegna,White
 nascu,White
 nasko sardinskii,White
 nusco,White
-ogu de aranna and resu,White
+ogu de aranna,White
+resu,White
 neherleschol,White
 neuburger,White
 brubler,White
@@ -7765,7 +7854,8 @@ novogradski,White
 ujvari,White
 weisser neuburger,White
 nobling,White
-staatliches weinbauinstitut freiburg: fr 128-40 and freiburg 128-40,White
+staatliches weinbauinstitut freiburg: fr 128-40,White
+freiburg 128-40,White
 nosiola,White
 nuragus,White
 abbondosa,White
@@ -7788,7 +7878,8 @@ meragus,White
 nugarus,White
 nuragus blanc de sardaigne,White
 nuragus moscadeddu,White
-nuragus moscatello and nuragus trebbiana,White
+nuragus moscatello,White
+nuragus trebbiana,White
 ondenc,White
 austenq,White
 béquin,White
@@ -7832,12 +7923,14 @@ sable blanc,White
 semis blanc,White
 sencit blanc,White
 sensit blanc,White
-and sercial,White
+sercial,White
 optima,White
-geilweilerhof 33-13-113 and gf 33-13-113,White
+geilweilerhof 33-13-113,White
+gf 33-13-113,White
 oraniensteiner,White
 orion,White
-geilweilerhof ga-58-30 and gf ga-58-30,White
+geilweilerhof ga-58-30,White
+gf ga-58-30,White
 ortega,White
 ortrugo,White
 altrughe,White
@@ -7853,14 +7946,16 @@ barbsin agglomerato,White
 barbsin bianco,White
 ortrugo de rovescala,White
 trebbiano di tortona,White
-vernasino bianco and vernesina,White
+vernasino bianco,White
+vernesina,White
 oz,White
 pagedebit,White
 pallagrello bianco,White
 pallarelli,White
 pallagrella bianca,White
 pallagrello di avellino,White
-pallarella and piedimonte bianco,White
+pallarella,White
+piedimonte bianco,White
 palomino,White
 listan,White
 perrum,White
@@ -7869,7 +7964,8 @@ pampanino,White
 la pampanuta,White
 pampanino,White
 pampanuta,White
-pampanuto di terlizzi and rizzulo,White
+pampanuto di terlizzi,White
+rizzulo,White
 parč,White
 pardillo,White
 pardina,White
@@ -7882,14 +7978,16 @@ montoneo,White
 montonero,White
 montonet,White
 parellada blanc,White
-perelada and perellada,White
+perelada,White
+perellada,White
 pascal blanc,White
 brun blanc,White
 jacobin violet,White
 ostertraube,White
 pascal,White
 pascaou blanc,White
-plant pascal and plant pascolu,White
+plant pascal,White
+plant pascolu,White
 passerina,White
 pecorino,White
 pecorello,White
@@ -7936,7 +8034,8 @@ uvarella,White
 uvina,White
 vecia,White
 verdicchio bastardo bianco,White
-vissanello and vissanello bianco,White
+vissanello,White
+vissanello bianco,White
 pedro giménez,White
 pedro ximénez,White
 px,White
@@ -7975,10 +8074,12 @@ alamis,White
 myuskadel,White
 verdello,White
 ximenecia,White
-zalema colchicina and the abbreviation px,White
+zalema colchicina,White
+the abbreviation px,White
 perle,White
 petit courbu,White
-courbu and courbu petit,White
+courbu,White
+courbu petit,White
 petit manseng,White
 izkiriota ttipi,White
 escriberou,White
@@ -7997,7 +8098,7 @@ mausec,White
 mausenc blanc,White
 miot,White
 petit mansenc,White
-and petit manseng blanc,White
+petit manseng blanc,White
 petit meslier,White
 arbonne,White
 barnay,White
@@ -8074,7 +8175,7 @@ szod bajor,White
 uva del friuli,White
 weisser blaustingl,White
 weisser ranful,White
-and wisellertraube weiss,White
+wisellertraube weiss,White
 picpoul,White
 piquepoul blanc,White
 piquepoul gris,White
@@ -8119,7 +8220,7 @@ moll,White
 pensal blanca,White
 premsal,White
 premsal blanca,White
-and prensal blanc,White
+prensal blanc,White
 prié blanc,White
 blanc de morgex,White
 agostenga,White
@@ -8178,7 +8279,8 @@ uva agostina,White
 uva d'agosto,White
 uva luce,White
 vert precoce de madere,White
-weisswaelscher and zibebe weiss,White
+weisswaelscher,White
+zibebe weiss,White
 prosecco,White
 glera,White
 ghera,White
@@ -8192,7 +8294,7 @@ prosecco nostrano,White
 prosecco tondo,White
 proseko sciprina,White
 serpina,White
-and uva pissona,White
+uva pissona,White
 prunesta,White
 bermestia nera,White
 bermestia rossa,White
@@ -8271,7 +8373,8 @@ weißwelscher,White
 welsche,White
 zürirebe,White
 zürichrebe,White
-züriweiss and züriwiss,White
+züriweiss,White
+züriwiss,White
 regner,White
 reichensteiner,White
 retagliado bianco,White
@@ -8299,12 +8402,14 @@ retelau,White
 retellau,White
 retigliau,White
 ritelau,White
-rittadatu and rotogliadu,White
+rittadatu,White
+rotogliadu,White
 rèze,White
 petit prié tardif,White
 reize verte,White
 réze verte,White
-rèzi and resi,White
+rèzi,White
+resi,White
 ribolla gialla,White
 robola,White
 avola,White
@@ -8346,7 +8451,8 @@ ribuole,White
 robolla,White
 rosazzo,White
 rumena rebula,White
-teran bijeli and zelena rebula,White
+teran bijeli,White
+zelena rebula,White
 riesling,White
 johannisberg riesling,White
 rheinriesling,White
@@ -8457,7 +8563,8 @@ robbola,White
 robola aspri,White
 robola kerini,White
 rombola,White
-rombola aspri and rompola,White
+rombola aspri,White
+rompola,White
 roditis,White
 rhoditis,White
 rollo,White
@@ -8646,7 +8753,7 @@ vernyeges veltelini,White
 verrnyeges veltelini,White
 weisser raifler,White
 weissholzige ribula maucnjk,White
-and ziegelroth,White
+ziegelroth,White
 rotgipfler,White
 roupeiro,White
 codega,White
@@ -8679,7 +8786,8 @@ rusan blan,White
 rovello bianco,White
 roviello,White
 rovello,White
-greco muscio and grecomusc,White
+greco muscio,White
+grecomusc,White
 sabro,White
 sacy,White
 tresallier,White
@@ -8712,7 +8820,7 @@ trezaguier,White
 trezailhi,White
 trezali,White
 trezari,White
-and weissklemmer,White
+weissklemmer,White
 ste marie,White
 saint-pierre doré,White
 cerceau,White
@@ -8726,7 +8834,8 @@ roussellou,White
 saint-clair,White
 saint come,White
 saint pierre,White
-san per dore and saint-pierre de l'allier,White
+san per dore,White
+saint-pierre de l'allier,White
 sarfeher,White
 sárfehér,White
 sauvignon blanc,White
@@ -8798,7 +8907,7 @@ surin,White
 sylvaner musque,White
 uva pelegrina,White
 weisser sauvignon,White
-and zöld ortlibi,White
+zöld ortlibi,White
 sauvignon vert,White
 sauvignonasse,White
 friulano,White
@@ -8833,7 +8942,8 @@ s 88,White
 sämling,White
 sämling 88,White
 scheu,White
-scheu 88 and scheu riesling,White
+scheu 88,White
+scheu riesling,White
 schönburger,White
 sémillon,White
 septiner,White
@@ -8922,12 +9032,13 @@ tchernyi redkii,White
 tcheurny redky,White
 timofeevka,White
 tsotler,White
-and tsotlyar,White
+tsotlyar,White
 sideritis,White
 siegerrebe,White
 alzey 7957,White
 az 7957,White
-scheu 7957 and sieger,White
+scheu 7957,White
+sieger,White
 silvaner,White
 sylvaner,White
 österreicher,White
@@ -9002,15 +9113,18 @@ siylvaner,White
 sylvaner vert,White
 grüner sylvaner,White
 grünfraenkisch,White
-franken riesling and grüner silvaner,White
+franken riesling,White
+grüner silvaner,White
 mátrai muskotály,White
 smederevka,White
 souvignier gris,White
-fr 392-83 and freiburg 392-83,White
+fr 392-83,White
+freiburg 392-83,White
 spagnol,White
 sultana,White
 sumoll blanc,White
-sumoi blanc and sumoll blanco,White
+sumoi blanc,White
+sumoll blanco,White
 symphony,White
 tamarêz,White
 tamares,White
@@ -9026,7 +9140,8 @@ forenses,White
 temprana,White
 tempranilla,White
 tempranillo de la rioja,White
-tinto de la rioja and tinto fino,White
+tinto de la rioja,White
+tinto fino,White
 téoulier,White
 brun,White
 grand téoulier,White
@@ -9045,24 +9160,28 @@ thuillier,White
 teoulie,White
 teoulier,White
 thuilier,White
-thuillier noir and trouillère,White
+thuillier noir,White
+trouillère,White
 terrantez,White
 morrao,White
 murrao,White
 pe de perdiz,White
 pe de perdrix,White
-pied de perdix and terrantes,White
+pied de perdix,White
+terrantes,White
 terret gris,White
 bourret,White
 tarret,White
 terrain,White
-terret bourret and terret rose,White
+terret bourret,White
+terret rose,White
 thrapsathiri,White
 timorasso,White
 morasso,White
 timuassa,White
 timoraccio,White
-timorazza and timorosso,White
+timorazza,White
+timorosso,White
 torrontés,White
 torontel,White
 moscatel de austria,White
@@ -9082,7 +9201,7 @@ torbato bianco,White
 trubat iberica,White
 trubau,White
 turbato,White
-and turbau,White
+turbau,White
 trbljan,White
 trebbiano,White
 ugni blanc,White
@@ -9156,7 +9275,8 @@ beau,White
 thalia,White
 trebbiano di soave,White
 trebbiano romagnolo,White
-trebbiano gallo and trebbiano d'abruzzo,White
+trebbiano gallo,White
+trebbiano d'abruzzo,White
 treixadura,White
 trajadura,White
 treixadura blanca,White
@@ -9164,7 +9284,8 @@ teixadura blanca,White
 tragadura,White
 trinca dente,White
 trincadente,White
-trincadeira and verdello rubio,White
+trincadeira,White
+verdello rubio,White
 trousseau gris,White
 grey riesling,White
 baratszölö,White
@@ -9191,7 +9312,8 @@ tsolikauri,White
 vega,White
 dalmasso 2-26,White
 id 2,White
-26 and incrocio dalmassso ii,White
+26,White
+incrocio dalmassso ii,White
 26,White
 verdea,White
 colombana,White
@@ -9212,7 +9334,8 @@ san colombano paradiso d'italia,White
 sancolombana,White
 vardea,White
 verdea di montalto,White
-verdecana and verdicchio giallo,White
+verdecana,White
+verdicchio giallo,White
 verdeca,White
 albese bianco,White
 albina verde,White
@@ -9240,7 +9363,8 @@ verdisco,White
 verdisco bianco,White
 verdisio bianco,White
 verdolino,White
-verdone and vino verde,White
+verdone,White
+vino verde,White
 verdejo,White
 verdelho,White
 gouveio,White
@@ -9259,7 +9383,8 @@ verdasse,White
 verdea,White
 verdêche,White
 verdesse muscade,White
-verdeze musqué and verdeze musquée,White
+verdeze musqué,White
+verdeze musquée,White
 verdicchio,White
 boschera bianca,White
 giallo,White
@@ -9305,7 +9430,8 @@ verdicchio verde,White
 verdicchio verzaro,White
 verdicchio verzello,White
 verdone,White
-verzaro and verzello verde,White
+verzaro,White
+verzello verde,White
 verdiso,White
 verdia,White
 groppeta,White
@@ -9327,7 +9453,8 @@ verdisio,White
 verdiso gentile,White
 verdiso zentil,White
 verdisone,White
-verdiza and verdisot,White
+verdiza,White
+verdisot,White
 verdoncho,White
 verduzzo,White
 ramandolo,White
@@ -9340,7 +9467,8 @@ verduza,White
 verduzzo friulano,White
 verduzzo giallo,White
 veduzz,White
-verduzo and verduzzo verde,White
+verduzo,White
+verduzzo verde,White
 verduzzo trevigiano,White
 ramandolo,White
 romandolo,White
@@ -9352,7 +9480,8 @@ verduza,White
 verduzzo friulano,White
 verduzzo giallo,White
 veduzz,White
-verduzo and verduzzo verde,White
+verduzo,White
+verduzzo verde,White
 vermentino,White
 rolle,White
 agostenga,White
@@ -9395,7 +9524,7 @@ verlantin,White
 vermentini,White
 vermentino bianco,White
 vermentino pigato,White
-and vermentinu,White
+vermentinu,White
 vernaccia,White
 vernaccia di oristano,White
 aregu biancu,White
@@ -9414,12 +9543,14 @@ vernaccia orosei,White
 vernaccia s rosalia,White
 vernaccia san rosalia,White
 vernaccia di s vero milis,White
-vernaccia di san vero milis and vernaccia di solarussa,White
+vernaccia di san vero milis,White
+vernaccia di solarussa,White
 veroga,White
 versoaln,White
 versailler,White
 versoaler,White
-weiss versoalen and weisser versailler,White
+weiss versoalen,White
+weisser versailler,White
 vespaiola,White
 bresparola,White
 bresparola bianca,White
@@ -9430,11 +9561,13 @@ vespaiolo,White
 vespajola,White
 vespajuola di bassano,White
 vesparola,White
-and vespera,White
+vespera,White
 vidiano,White
-avidiano and abudiano,White
+avidiano,White
+abudiano,White
 vilana,White
-belana and velana,White
+belana,White
+velana,White
 vinhao,White
 viognier,White
 bergeron,White
@@ -9452,7 +9585,8 @@ vital,White
 boal bonifacio,White
 malvazia corada,White
 malvasia fina de douro,White
-malvasia fina do douro and malvasia ou malvazia,White
+malvasia fina do douro,White
+malvasia ou malvazia,White
 vitovska,White
 voskehat,White
 vugava,White
@@ -9512,7 +9646,8 @@ prensa branco,White
 vinate,White
 vinyater,White
 xarell-lo,White
-xarello and xarelo blanco,White
+xarello,White
+xarelo blanco,White
 xynisteri,White
 zala gyöngye,White
 zalema,White
@@ -9521,7 +9656,7 @@ rebazo,White
 salemo,White
 salerno,White
 zalemo,White
-and zalemo rebazo,White
+zalemo rebazo,White
 zefir,White
 zenit,White
 zengő,White
@@ -9559,7 +9694,8 @@ rothreifler,White
 rotreifler,White
 rubiner,White
 spätrot,White
-zerjavina and zierfandler rot,White
+zerjavina,White
+zierfandler rot,White
 žilavka,White
 mostarska,White
 mostarska žilavka,White
@@ -9567,18 +9703,5 @@ zhelavka biella,White
 žilava hercegovačka,White
 zilavka,White
 žilavka bijela,White
-and žilavka mostarska,White
+žilavka mostarska,White
 žlahtina,White
-agdam gyzyl uzumu,Rose
-agdam gyzyl izyum,Rose
-agdam gyzyl uzumu,Rose
-agdam qizil uezuemue,Rose
-agdam's gyzyl uzumu,Rose
-chardonnay rose,Rose
-barbera rose,Rose
-chablais blanc,Rose
-chablais rose,Rose
-chablis blanc,Rose
-chablis rose,Rose
-pink chablis,Rose
-rielsing rose,Rose

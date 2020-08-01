@@ -2,9 +2,9 @@ from csv import writer
 from csv import reader
 import re
 
-# Function to split a comma or forward slash separated string to a list
+# Function to split a comma, forward slash, or 'and' separated string to a list
 def splitNames(namesStr):
-    nameLst = re.split(r",|\/", namesStr, flags=re.IGNORECASE)
+    nameLst = re.split(r",|\/| and ", namesStr, flags=re.IGNORECASE)
     nameLst = [name.strip() for name in nameLst]
     return nameLst
 

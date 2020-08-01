@@ -19,18 +19,18 @@ def partialMatchPhrase(searchTarget, searchTerms):
 # Function to find wine color based on common words for that color
 def findColors(searchTarget):
     colors = []
-    if partialMatchPhrase(searchTarget, ['rosé', 'rosato', 'roséwein', 'rosat', 'roséfine']):
+    if partialMatchPhrase(searchTarget, ['rosé', 'rosato', 'rosado', 'rosat', 'roséwein', 'roséfine']):
         colors.append('Rosé')
-    elif partialMatchPhrase(searchTarget, ['white','blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
+    if partialMatchPhrase(searchTarget, ['white','blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
         colors.append('White')
-    elif partialMatchPhrase(searchTarget, ['red','wotwein','rosso','rouge']):
+    if partialMatchPhrase(searchTarget, ['red','rotwein','rosso','rouge']):
         colors.append('Red')
     return colors
 
 # Function to find if the wine is sparkling based on common words for sparkling
 def findPrefix(searchTarget):
     prefix = None
-    if partialMatchPhrase(searchTarget, ['sparkling','champagne','bubbles','brut','bruto', 'sekt', \
+    if partialMatchPhrase(searchTarget, ['sparkling','champagne','bubbles', 'bubbly','brut','bruto', 'sekt', \
         'Schaumwein','effervescent', 'spumante','scintillante']):
         prefix = 'Sparkling'
     return prefix
@@ -69,24 +69,50 @@ def determineWineType(variety, designation, description):
     if not suffix:
         suffix = findSuffix(designation)
 
-    # First take color from wine variety name or designation
-    colors = findColors(variety) + findColors(designation)
+    # First take color from wine variety name
+    colors = findColors(variety)
     (color, colors) = chooseMostCommon(colors)
 
-    # Next try to match wine variety to grape list from Wikipedia
+    if color is None and ('-' in variety):
+        for varietyPart in variety.split('-'):
+            colors += findColors(variety)
+
+        (color, colors) = chooseMostCommon(colors)
+
     if color is None:
-        full_matches = grape_list[grape_list['Name'].apply(lambda x: x == variety)]
+         # Next try to match wine variety to grape list from Wikipedia
+        full_matches = grape_list[grape_list['Name'].apply(lambda x: x == variety)]['Type'].tolist()
 
-        # If full matches exist, take those
+        # Handle hyphenated blends
+        if len(full_matches) == 0 and ('-' in variety):
+            for varietyPart in variety.split('-'):
+                full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
+
+        if len(full_matches) == 0 and (' ' in variety):
+            for varietyPart in variety.split(' '):
+                full_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]['Type'].tolist()
+
+        # Check for full grape matches
         if len(full_matches):
-            colors = colors + full_matches['Type'].unique().tolist()
+            colors += full_matches
             # If we find a single color based on full matches, go with that
-            (color, colors) = chooseMostCommon(colors)
 
-        # Otherwise if partial matches exist, take those
-        else:
-            partial_matches = grape_list[grape_list['Name'].apply(lambda x: partialMatchPhrase(x, [variety]))]
-            colors = colors + partial_matches['Type'].unique().tolist()
+        (color, colors) = chooseMostCommon(colors)
+
+    if color is None:
+        # Next take color from wine designation
+        colors += findColors(designation)
+
+        # Check for partial grape matchese
+        partial_matches = grape_list[grape_list['Name'].apply(lambda x: partialMatchPhrase(x, [variety]))]
+
+        # Handle hyphenated blends
+        if len(partial_matches) == 0 and ('-' in variety):
+            for varietyPart in variety.split('-'):
+                partial_matches += grape_list[grape_list['Name'].apply(lambda x: x == varietyPart)]
+        colors += partial_matches['Type'].tolist()
+
+        (color, colors) = chooseMostCommon(colors)
 
     # This is where we make some best guesses since no match was found...
     # Try this lookup list for white wines either not in our grape list or in multiple lists
@@ -103,7 +129,7 @@ def determineWineType(variety, designation, description):
 
     # If we still have no color match, look in description
     if color is None:
-        colors = colors + findColors(description)
+        colors += findColors(description)
         (color, colors) = chooseMostCommon(colors, True)
 
     # If still no match, assume Red
@@ -117,7 +143,7 @@ def addTypeColumnToData():
     print('>>> Starting')
 
     with open('winemag-data-130k-v2.csv', 'r') as read_obj, \
-        open('winemag-data-modified.csv', 'w', newline='') as write_obj:
+        open('winemag-data-modified-utf8.csv', 'w', newline='') as write_obj:
         # Create a csv.reader object from the input file object
         csv_reader = reader(read_obj)
         # Create a csv.writer object from the output file object
@@ -146,4 +172,4 @@ def addTypeColumnToData():
     print('>>> Finished')
 
 # Uncomment this to run the function to add type column
-#addTypeColumnToData()
+addTypeColumnToData()
