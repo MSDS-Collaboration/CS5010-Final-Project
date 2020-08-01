@@ -2,116 +2,148 @@ import pandas as pd
 from csv import writer
 from csv import reader
 import re
-
-
-# Removes parenthesis or brackets and their contents
-def removeParens(string):
-    s = re.sub(r"[\(\[].*?[\)\]]", "", string)
-    return s.strip()
-
-# Function to match grape color to wine variety (Red, White, Rose, Multiple, or Unknown)
-def grapeId(description, variety):
-    color = ''
-    prefix = ''
-    suffix = ''
-
-    # First take color from wine variety name if applicable (e.g. Red Blend)
-    if bool(re.search(r'\b' + 'red' + r'\b', variety)):
-        color = 'Red'
-    elif bool(re.search(r'\b' + 'white' + r'\b', variety)):
-        color = 'White'
-    elif bool(re.search(r'\b' + 'rosé' + r'\b', variety)):
-        color = 'Rosé'
-
-    # Next try to match wine variety to grape list from Wikipedia
-    else:
-        full_matches = grape_list[grape_list['Name'].str.lower() == variety] # Full name match
-        partial_matches = grape_list[grape_list['Name'].str.contains(r'\b' + re.escape(variety) + r'\b', \
-            case=False, na=False)] # Partial name match
-
-        # If full matches exist, take those
-        if len(full_matches):
-            colors = full_matches['Type'].unique()
-        # Otherwise if partial matches exist, take those
-        elif len(partial_matches):
-            colors = partial_matches['Type'].unique()
-        # Otherwise, empty match list
-        else:
-            colors = []
-
-        # If single color match
-        if len(colors) == 1:
-            color = colors[0]
-
-        # If we still have no match, look in description
-        if len(color) == 0:
-            if bool(re.search(r'\b' + 'red' + r'\b', description, flags=re.IGNORECASE)):
-                color = 'Red'
-            elif bool(re.search(r'\b' + 'white' + r'\b', description, flags=re.IGNORECASE)):
-                color = 'White'
-            elif bool(re.search(r'\b' + 'blanc' + r'\b', description, flags=re.IGNORECASE)):
-                color = 'White'
-            elif bool(re.search(r'\b' + 'blanc' + r'\b', description, flags=re.IGNORECASE)):
-                color = 'White'
-            elif bool(re.search(r'\b' + 'rosé' + r'\b', description, flags=re.IGNORECASE)):
-                color = 'Rosé'
-
-    # Check if a sparkling wine
-    if bool(re.search(r'\b' + 'sparkling' + r'\b', variety, flags=re.IGNORECASE)):
-        prefix = 'Sparkling'
-    elif bool(re.search(r'\b' + 'champagne' + r'\b', variety, flags=re.IGNORECASE)):
-        prefix = 'Sparkling'
-    elif bool(re.search(r'\b' + 'sparkling' + r'\b', description, flags=re.IGNORECASE)):
-        prefix = 'Sparkling'
-    elif bool(re.search(r'\b' + 'champagne' + r'\b', description, flags=re.IGNORECASE)):
-        prefix = 'Sparkling'
-
-    # This is where we make some best guesses since no match was found...
-    # Almost all sparkling wines are white
-    if len(color) == 0 & len(prefix):
-        color = 'White'
-    # Try this lookup list for white wines either not in our grape list or in both red and white but known usually white
-    elif variety in ['pinot gris', 'muskat', 'muscadine', 'malvasia fina', 'malvasia', 'gros plant', 'cercial', 'cerceal']:
-        color = 'White'
-    # If still no match, assume Red
-    elif len(color) == 0:
-        color = 'Red'
-
-    # Check if a blend
-    if bool(re.search(r'\b' + 'blend' + r'\b', variety, flags=re.IGNORECASE)):
-        suffix = 'Blend'
-    elif bool(re.search(r'\b' + 'blend' + r'\b', description, flags=re.IGNORECASE)):
-        suffix = 'Blend'
-
-    return " ".join([prefix, color, suffix])
-
-
-
-print('>>> Starting')
+from collections import Counter
 
 grape_list = pd.read_csv('grape_list_parsed.csv')
 
-with open('winemag-data-130k-v2.csv', 'r') as read_obj, \
-    open('winemag-data-modified.csv', 'w', newline='') as write_obj:
-    # Create a csv.reader object from the input file object
-    csv_reader = reader(read_obj)
-    # Create a csv.writer object from the output file object
-    csv_writer = writer(write_obj)
-    # Read each row of the input csv file as list
-    i = 0
-    for row in csv_reader:
-        # Skip rows with null in important columns
-        if row[1] and row[4] and row[5] and row[9] and row[12]:
-            # Append the default text in the row / list
-            column = grapeId(row[2].lower(), row[12].lower()) if (i > 0) else 'type'
-            row[11] = removeParens(row[11])
-            row.append(column)
-            # Add the updated row / list to the output file
-            csv_writer.writerow(row)
-            i += 1
+# Removes parenthesis or brackets and their contents
+def removeComments(string):
+    s = re.sub(r"[\(\[].*?[\)\]]", "", string)
+    return s.strip()
 
-# Count results
-wine_list = pd.read_csv('winemag-data-modified.csv')
-print(wine_list.groupby('type').count())
+# Function to see if any searchTerm from list equals any whole word in the searchTarget string
+def partialMatchPhrase(searchTarget, searchTerms):
+    searchTargetTerms = re.findall(r'\b\S+\b', searchTarget)
+    return len(set(searchTerms).intersection(searchTargetTerms)) > 0
 
-print('>>> Finished')
+# Function to find wine color based on common words for that color
+def findColors(searchTarget):
+    colors = []
+    if partialMatchPhrase(searchTarget, ['rosé', 'rosato', 'roséwein', 'rosat', 'roséfine']):
+        colors.append('Rosé')
+    elif partialMatchPhrase(searchTarget, ['white','blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
+        colors.append('White')
+    elif partialMatchPhrase(searchTarget, ['red','wotwein','rosso','rouge']):
+        colors.append('Red')
+    return colors
+
+# Function to find if the wine is sparkling based on common words for sparkling
+def findPrefix(searchTarget):
+    prefix = None
+    if partialMatchPhrase(searchTarget, ['sparkling','champagne','bubbles','brut','bruto', 'sekt', \
+        'Schaumwein','effervescent', 'spumante','scintillante']):
+        prefix = 'Sparkling'
+    return prefix
+
+def findSuffix(searchTarget):
+    suffix = None
+    if partialMatchPhrase(searchTarget, ['blend']):
+        suffix = 'Blend'
+    return suffix
+
+def chooseMostCommon(searchList, breakTies = False):
+    searchSet = set(searchList)
+    if len(searchSet) == 1:
+        return (searchList[0], searchList)
+    elif len(searchSet) == 0:
+        return (None, searchList)
+    else:
+        sorted = Counter(searchList).most_common() # list of tuples with (value, count) in sorted order
+        mostCommon = [(value, count) for (value, count) in sorted if sorted[0][1] == count]
+        if len(mostCommon) == 1 | breakTies:
+            return (mostCommon[0][0], searchList)
+        else:
+            return (None, searchList)
+
+# Algorithm to guess wine type (Red, White, Rose, Sparkling, or Blend)
+# We build a list of color matches based on several criteria
+# Then we take the most frequent color in that list
+def determineWineType(variety, designation, description):
+    # Check if a sparkling wine
+    prefix = findPrefix(variety)
+    if not prefix:
+        prefix = findPrefix(designation)
+
+    # Check if a blend
+    suffix = findSuffix(variety)
+    if not suffix:
+        suffix = findSuffix(designation)
+
+    # First take color from wine variety name or designation
+    colors = findColors(variety) + findColors(designation)
+    (color, colors) = chooseMostCommon(colors)
+
+    # Next try to match wine variety to grape list from Wikipedia
+    if color is None:
+        full_matches = grape_list[grape_list['Name'].apply(lambda x: x == variety)]
+
+        # If full matches exist, take those
+        if len(full_matches):
+            colors = colors + full_matches['Type'].unique().tolist()
+            # If we find a single color based on full matches, go with that
+            (color, colors) = chooseMostCommon(colors)
+
+        # Otherwise if partial matches exist, take those
+        else:
+            partial_matches = grape_list[grape_list['Name'].apply(lambda x: partialMatchPhrase(x, [variety]))]
+            colors = colors + partial_matches['Type'].unique().tolist()
+
+    # This is where we make some best guesses since no match was found...
+    # Try this lookup list for white wines either not in our grape list or in multiple lists
+    # but known usually white
+    if color is None and variety in ['chardonnay', 'riesling', 'pinot gris', 'muskat', \
+        'muscadine', 'malvasia fina', 'malvasia', 'gros plant', 'cercial', 'cerceal']:
+        colors.append('White')
+        (color, colors) = chooseMostCommon(colors)
+
+    # Almost all sparkling wines are white
+    if color is None and prefix == 'Sparkling':
+        colors.append('White')
+        (color, colors) = chooseMostCommon(colors)
+
+    # If we still have no color match, look in description
+    if color is None:
+        colors = colors + findColors(description)
+        (color, colors) = chooseMostCommon(colors, True)
+
+    # If still no match, assume Red
+    if color is None:
+        color = 'Red'
+
+    return (" ".join(filter(None, (prefix, color, suffix))))
+
+# Function to populate type column in data file
+def addTypeColumnToData():
+    print('>>> Starting')
+
+    with open('winemag-data-130k-v2.csv', 'r') as read_obj, \
+        open('winemag-data-modified.csv', 'w', newline='') as write_obj:
+        # Create a csv.reader object from the input file object
+        csv_reader = reader(read_obj)
+        # Create a csv.writer object from the output file object
+        csv_writer = writer(write_obj)
+
+        # Read each row of the input csv file as list
+        i = 0
+        for row in csv_reader:
+            # Skip rows with null in important columns
+            if row[1] and row[4] and row[5] and row[9] and row[12]:
+                # Append wineType, or if first row, append column header
+                if (i > 0):
+                    wineType = determineWineType(row[12].lower(), row[3].lower(), row[2].lower())
+                else:
+                    wineType = 'type'
+                row[11] = removeComments(row[11])
+                row.append(wineType)
+                # Add the updated row / list to the output file
+                csv_writer.writerow(row)
+                i += 1
+
+    # Display count of rows matched to each wine type
+    wine_list = pd.read_csv('winemag-data-modified-utf8.csv')
+    print(wine_list.groupby('type').count())
+
+    print('>>> Finished')
+
+# Uncomment this to run the function to add type column
+#addTypeColumnToData()

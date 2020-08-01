@@ -34,14 +34,14 @@ def parseGrapeList():
             for phrase in splitNames(row[0]):
                 if len(phrase):
                     phrase = removeComments(phrase)
-                    csv_writer.writerow([phrase, color])
+                    csv_writer.writerow([phrase.lower(), color])
 
             for phrase in splitNames(row[1]):
                 if len(phrase):
                     phrase = removeComments(phrase)
-                    csv_writer.writerow([phrase, color])
+                    csv_writer.writerow([phrase.lower(), color])
 
     print('>>> Finished')
 
 # Uncomment this and run to parse the grape_list.csv file
-# parseGrapeList()
+parseGrapeList()
