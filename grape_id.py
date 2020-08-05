@@ -29,7 +29,7 @@ def findColors(searchTarget, weighDefinitive=True, weighAll=False):
             colors.append('Rosé')
             colors.append('Rosé')
             colors.append('Rosé')
-    if partialMatchPhrase(searchTarget, ['blanc','bianco','bianca','weißwein', 'weißwein', 'weis']):
+    if partialMatchPhrase(searchTarget, ['blanc','bianco','bianca','weißwein', 'weis']):
         colors.append('White')
         if weighAll | weighDefinitive:
             colors.append('White')
@@ -40,7 +40,7 @@ def findColors(searchTarget, weighDefinitive=True, weighAll=False):
         if weighAll:
             colors.append('White')
             colors.append('White')
-    if partialMatchPhrase(searchTarget, ['rotwein','rosso','rouge']):
+    if partialMatchPhrase(searchTarget, ['noir','rotwein','rosso','rouge']):
         colors.append('Red')
         if weighAll | weighDefinitive:
             # We add extra weight to matches on varity
@@ -169,7 +169,7 @@ def addTypeColumnToData():
     print('>>> Starting')
 
     with open('winemag-data-130k-v2.csv', 'r') as read_obj, \
-        open('winemag-data-modified-utf8.csv', 'w', newline='') as write_obj:
+        open('wine.csv', 'w', newline='') as write_obj:
         # Create a csv.reader object from the input file object
         csv_reader = reader(read_obj)
         # Create a csv.writer object from the output file object
@@ -192,10 +192,10 @@ def addTypeColumnToData():
                 i += 1
 
     # Display count of rows matched to each wine type
-    wine_list = pd.read_csv('winemag-data-modified-utf8.csv')
+    wine_list = pd.read_csv('wine.csv')
     print(wine_list.groupby('type').count())
 
     print('>>> Finished')
 
 # Uncomment this to run the function to add type column
-# addTypeColumnToData()
+addTypeColumnToData()

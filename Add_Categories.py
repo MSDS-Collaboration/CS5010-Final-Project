@@ -43,12 +43,12 @@ bitter_white = ["Austere", "Citrus Pith", "Quince", "Bitter", "Almond", "Green",
 
 # ========== Body Profile ============ #
 # Light-Bodied
-light_bodied_red = ["Light-bodied", 'summer', "Light", "fresh:, ""Subtle", "Delicate", "Elegant", "Crisp", "Thin", "Finesse", "Bright", "Floral"]
-light_bodied_white = ["Light-bodied", 'summer', "Light","Zesty", "Airy", "Lean", "fresh", "Racy", "Crisp", "Zippy", "Austere", "Long Tingly Finish", "Brilliant", "Lively"]
+light_bodied_red = ["Light-bodied", "Light Bodied", 'summer', "Light Body", "Light", "fresh:, ""Subtle", "Delicate", "Elegant", "Crisp", "Thin", "Finesse", "Bright", "Floral"]
+light_bodied_white = ["Light-bodied", "Light Bodied", 'summer', "Light Body", "Light","Zesty", "Airy", "Lean", "fresh", "Racy", "Crisp", "Zippy", "Austere", "Long Tingly Finish", "Brilliant", "Lively"]
 
 # Full-Bodied
-full_bodied_red = ["Full-bodied", "Rich", "Lush", "Opulent", 'richness', 'syrah', "Rigid", "Intense", "Extracted", "High Alcohol", "High Tannin", "Firm", "Structured", "Muscular", "Concentrated", "Hot",'ripe', 'luscious','heft', 'bold', 'lavish']
-full_bodied_white = ["Full-bodied", "Rich", "Lush", "Oily", "Buttery", 'richness', "biscuit", "brioche", "buttery", "butter", "caramel", "shortcake", "cereal", "cream", "marzipan", "croissant", "pastry",'ripe', 'luscious','heft', 'bold', 'lavish']
+full_bodied_red = ["Full-bodied", "Full Bodied", "Full Body", "Rich", "Lush", "Opulent", 'richness', 'syrah', "Rigid", "Intense", "Extracted", "High Alcohol", "High Tannin", "Firm", "Structured", "Muscular", "Concentrated", "Hot",'ripe', 'luscious','heft', 'bold', 'lavish']
+full_bodied_white = ["Full-bodied", "Full Bodied", "Full Body", "Rich", "Lush", "Oily", "Buttery", 'richness', "biscuit", "brioche", "buttery", "butter", "caramel", "shortcake", "cereal", "cream", "marzipan", "croissant", "pastry",'ripe', 'luscious','heft', 'bold', 'lavish']
 # In[106]:
 
 
