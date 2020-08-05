@@ -44,4 +44,4 @@ def parseGrapeList():
     print('>>> Finished')
 
 # Uncomment this and run to parse the grape_list.csv file
-parseGrapeList()
+# parseGrapeList()

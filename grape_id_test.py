@@ -4,18 +4,19 @@ from grape_id import *
 class GeneralTestCase(unittest.TestCase): # inherit from unittest.TestCase
 
     def test_is_partialMatchPhrase_true_working(self):
-        self.assertFalse(partialMatchPhrase('sauvigon blanc blend', ['pinot grigio', 'sauvigon blanc', 'chardonnay']))
+        self.assertTrue(partialMatchPhrase('sauvigon blanc blend',
+          ['pinot grigio', 'sauvigon blanc', 'chardonnay']))
 
     def test_is_partialMatchPhrase_false_working(self):
         self.assertFalse(partialMatchPhrase('merlot blend', ['pinot grigio', 'sauvigon blanc', 'chardonnay']))
 
     def test_is_findColors_singleResult_working(self):
         colors = findColors('Vigorosa Rosato'.lower())
-        self.assertEqual(colors, ['Rosé'])
+        self.assertEqual(colors, ['Rosé', 'Rosé', 'Rosé', 'Rosé', 'Rosé'])
 
     def test_is_findColors_multiResult_working(self):
         colors = findColors('Blanc de Noirs, white Champagne only from red grapes, produces wines with some weight, as here. It makes for a rich, full-blooded Champagne, packed with red fruits while also cut through with intense acidity.'.lower())
-        self.assertEqual(colors, ['White', 'Red'])
+        self.assertEqual(colors, ['White', 'White', 'White', 'White', 'White', 'Red'])
 
     def test_is_findColors_noResult_working(self):
         colors = findColors('Earthy aromas mingle with mandarin peel on the nose. Reddish in color.'.lower())

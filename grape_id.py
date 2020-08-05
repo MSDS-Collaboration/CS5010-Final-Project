@@ -13,8 +13,11 @@ def removeComments(string):
 
 # Function to see if any searchTerm from list equals any whole word in the searchTarget string
 def partialMatchPhrase(searchTarget, searchTerms):
-    searchTargetTerms = re.findall(r'\b\S+\b', searchTarget)
-    return len(set(searchTerms).intersection(searchTargetTerms)) > 0
+    for term in searchTerms:
+        matches = re.findall(r'\b' + re.escape(term) + r'\b', searchTarget)
+        if len(matches) > 0:
+            return True
+    return False
 
 # Function to find wine color based on common words for that color
 # Certain matches are given more weight to reduce matching errors
@@ -198,4 +201,4 @@ def addTypeColumnToData():
     print('>>> Finished')
 
 # Uncomment this to run the function to add type column
-addTypeColumnToData()
+# addTypeColumnToData()
