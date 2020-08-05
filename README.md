@@ -27,6 +27,7 @@ Original grape Variety list (Wikipedia): grape_list.csv
 ### Step 3: Add Flavor Profile Tags
 
 - NLP Practice: Text_Mining_Suite.ipynb
+- Definitions: 3. NLP Definitions.pdf
 - Test with One Paragraph Box: Desc_Test_1_Box.ipynb
 - Original Categorizer Script: Add_Categories.ipynb
 - Chunked Processing Categorizer Script: Add_Categories.py
