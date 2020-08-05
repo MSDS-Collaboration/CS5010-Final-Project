@@ -4,8 +4,8 @@ from grape_id import *
 class GeneralTestCase(unittest.TestCase): # inherit from unittest.TestCase
 
     def test_is_partialMatchPhrase_true_working(self):
-        self.assertTrue(partialMatchPhrase('sauvigon blanc blend',
-          ['pinot grigio', 'sauvigon blanc', 'chardonnay']))
+        self.assertTrue(partialMatchPhrase('sauvignon blanc blend',
+          ['pinot grigio', 'sauvignon blanc', 'chardonnay']))
 
     def test_is_partialMatchPhrase_false_working(self):
         self.assertFalse(partialMatchPhrase('merlot blend', ['pinot grigio', 'sauvigon blanc', 'chardonnay']))
