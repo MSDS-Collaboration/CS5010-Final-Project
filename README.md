@@ -2,6 +2,9 @@
 Final project for CS 5010: Python for Data Analysis
 Bev Dobrenz (bgd5de), Joseph Wysocki (jw6mw), Amanda West (acw9gs), Nikki Aaron (na5zn)
 
+- Paper: 1. Write-Up
+- Powerpoint: 2. Powerpoint Slides
+
 ## File List
 #
 Original dataset: winemag-data-130k-v2.csv
