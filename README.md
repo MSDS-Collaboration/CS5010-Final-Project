@@ -2,6 +2,9 @@
 Final project for CS 5010: Python for Data Analysis
 Bev Dobrenz (bgd5de), Joseph Wysocki (jw6mw), Amanda West (acw9gs), Nikki Aaron (na5zn)
 
+- Paper: 1. Write-Up
+- Powerpoint: 2. Powerpoint Slides
+
 ## File List
 #
 Original dataset: winemag-data-130k-v2.csv
@@ -24,6 +27,8 @@ Original grape Variety list (Wikipedia): grape_list.csv
 ### Step 3: Add Flavor Profile Tags
 
 - NLP Practice: Text_Mining_Suite.ipynb
+- Definitions: 3. NLP Definitions.pdf
+- Test with One Paragraph Box: Desc_Test_1_Box.ipynb
 - Original Categorizer Script: Add_Categories.ipynb
 - Chunked Processing Categorizer Script: Add_Categories.py
 - Output: wine2.csv
