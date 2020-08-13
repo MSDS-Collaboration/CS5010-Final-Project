@@ -1,3 +1,5 @@
+![alt text](Sample_Image.png)
+
 # CS5010-Final-Project
 Final project for CS 5010: Python for Data Analysis
 Bev Dobrenz (bgd5de), Joseph Wysocki (jw6mw), Amanda West (acw9gs), Nikki Aaron (na5zn)
